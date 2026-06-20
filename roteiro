@@ -1,0 +1,110 @@
+Aqui está uma proposta completa de **roteiro de navegação (Copywriting/Conteúdo)** e uma **ideia de interface (Design/UX)** para o seu simulador de finanças.
+
+A ideia principal é focar em uma experiência visual leve, intuitiva e que não intimide o usuário com termos técnicos complexos logo de cara.
+
+---
+
+## 🎨 Ideia de Interface (UX/UI)
+
+Para que um simulador financeiro funcione bem, o usuário precisa ver os resultados mudando em **tempo real** conforme altera as variáveis.
+
+### Estrutura da Página (Layout Split-Screen)
+
+Uma ótima abordagem é dividir a tela ao meio em telas de desktop, ou em blocos verticais no mobile:
+
+* **Lado Esquerdo (Inputs - Controle):** Onde o usuário insere os dados. Em vez de apenas campos de texto numéricos, use **sliders (barras deslizantes)**. Eles tornam a experiência interativa e lúdica.
+* **Lado Direito (Outputs - Resultados):** Um painel dinâmico com um gráfico visual (linhas ou barras) e o valor final em destaque.
+
+### Paleta de Cores Sugerida
+
+* **Fundo:** Branco ou Cinza bem claro (`#F8F9FA`) para passar clareza e organização.
+* **Cor Principal (Ação):** Verde Esmeralda ou Azul Fechado (transmite confiança, crescimento e segurança).
+* **Cor de Destaque (Gráficos):** Laranja ou Roxo para destacar a evolução do dinheiro.
+
+---
+
+## 📝 Roteiro do Site (Copywriting e Fluxo)
+
+### 1. Hero Section (Abertura do Site)
+
+* **Título Principal:** "Onde seu dinheiro estará daqui a alguns anos?"
+* **Subtítulo:** "Simule seus investimentos de forma simples, sem economês. Descubra o poder dos juros compostos em segundos."
+* **Botão de Ação (CTA):** "Começar a Simular" (Rola a página direto para o simulador).
+
+---
+
+### 2. O Simulador (A Ferramenta)
+
+Esta é a seção central. Abaixo está a cópia dos campos e como eles devem funcionar.
+
+#### **Lado Esquerdo: Suas Metas**
+
+* **Texto de Apoio:** "Ajuste os valores abaixo para refletir a sua realidade ou seus planos."
+* **Campo 1: "Quanto você tem hoje para começar?"**
+* *Tipo:* Campo de valor com slider.
+* *Exemplo padrão:* R$ 1.000,00
+
+
+* **Campo 2: "Quanto você pretende guardar por mês?"**
+* *Tipo:* Campo de valor com slider.
+* *Exemplo padrão:* R$ 300,00
+
+
+* **Campo 3: "Por quanto tempo quer investir?"**
+* *Tipo:* Slider de tempo (seletor para escolher entre "Meses" ou "Anos").
+* *Exemplo padrão:* 5 anos.
+
+
+* **Campo 4: "Qual a taxa de rendimento estimada?"**
+* *Tipo:* Slider de porcentagem (com atalhos rápidos: *Poupança, Renda Fixa Selic, Renda Variável*).
+* *Exemplo padrão:* 10% ao ano.
+
+
+
+#### **Lado Direito: Seu Futuro Financeiro**
+
+* **Destaque Principal (Texto Grande):** "Em **[Tempo Selecionado]**, você terá acumulado:"
+* **Valor Total:** **R$ [Resultado Final]** (Em verde e caixa alta).
+* **Mini Gráfico:** Um gráfico de linhas mostrando duas curvas:
+1. O total que saiu do bolso do usuário (valor investido).
+2. O total que cresceu graças aos juros (o dinheiro trabalhando sozinho).
+
+
+* **Card Informativo (O "Efeito Uau"):**
+> 💡 **Você sabia?** Desse valor total, **R$ [Apenas Juros]** foram gerados inteiramente por juros compostos. Isso é o seu dinheiro trabalhando por você!
+
+
+
+---
+
+### 3. Seção de Contexto/Educação (Abaixo do Simulador)
+
+Para dar autoridade ao site e ajudar quem ainda está perdido, inclua três blocos simples de texto:
+
+* **Card 1: O que são Juros Compostos?**
+* "É o famoso efeito bola de neve. No começo parece pouco, mas com o tempo, os juros rendem sobre os próprios juros, acelerando o crescimento do seu patrimônio."
+
+
+* **Card 2: A constância vence o valor alto**
+* "Guardar R$ 100 todo mês por 10 anos costuma trazer resultados melhores e mais saudáveis do que tentar guardar R$ 1.000 apenas de vez em quando."
+
+
+* **Card 3: Onde encontrar essas taxas?**
+* "As taxas simuladas (como 10% ou 12% ao ano) podem ser encontradas em investimentos de Renda Fixa (CDBs, Tesouro Direto) ou fundos de investimento, a depender do momento da economia."
+
+
+
+---
+
+### 4. Rodapé e Próximo Passo (CTA Final)
+
+* **Chamada para Ação:** "Gostou do resultado? O primeiro passo é o mais importante."
+* **Botão:** "Aprenda a montar sua primeira reserva" ou "Baixe nossa planilha de orçamento gratuita".
+
+---
+
+### 💡 Dica Extra de Desenvolvimento
+
+Se você for programar esse site, utilize bibliotecas de gráficos simples e leves, como o **Chart.js** (para Javascript vanilla ou React) ou **ApexCharts**. Elas renderizam os gráficos de forma muito fluida enquanto o usuário arrasta os sliders de valores.
+
+O que achou dessa estrutura? Prefere um simulador focado em um objetivo específico (como aposentadoria ou compra de imóvel) ou algo geral como este?

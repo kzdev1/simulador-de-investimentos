@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #dadada;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(
+        to right,
+        #0076fd 0%,
+        #2F3447 30%,
+        #928292 100%
+
+    );
+}
+
+
+.divisao-de-tela{
+    width: 65vw;
+    box-sizing: border-box;
+    background: #0076fd;
+    height: 100vh;
+
+}
+
+.divisao-de-foto{
+    width: 35vw;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-img{
+    width: 900px;
+    height: 700px;
+}
+
+
+
+
+
+
+
+
+
