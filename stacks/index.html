@@ -5,25 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simule seus investimentos</title>
     <link rel="stylesheet" href="style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');</style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
 </head>
 
 <body>
-    <div class="andar1">
+
+    <nav>
+        <div class="navbar">
+            <a href="#andar1"><p>InvestSim</p></a>
+                <div class="links">
+                    <a href="#andar1">Início</a>
+                    <a href="">Como funciona</a>
+                    <a href="">Sobre</a>
+                </div>
+
+            <a href="#andar2"><button>Simular agora</button></a>
+
+        </div>
+    </nav>    
+
+    <div class="andar1" id="andar1">
+            
 
         <div class="leftside">
+          
             <div class="intro">
                 <p>Simulador de Investimentos</p>
-                    <h1>Onde o seu dinheiroestará daqui a alguns anos? </h1><!--Titulo principal-->
+                    <h1>Onde o seu dinheiro estará daqui a alguns anos? </h1><!--Titulo principal-->
                     <p> Simule seus investimentos de forma simples, sem economês. Descubra o poder dos juros compostos em segundos.</p> <!--Subtitulo-->
-                <button>Simular agora</button>
+                    
+                    <a href="#andar2"><button>Simular agora
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M19 12l-7 7-7-7"/>
+                            </svg>
+                    </button></a>
             </div>
+            
         </div>
 
             <div class="rightside"></div>   
     </div>
 
 
-    <div class="andar2">
+    <div class="andar2" id="andar2">
                 <div class="container">
                     <div class="intro2">
                        <p>Simulador de investimentos</p>
@@ -34,41 +59,75 @@
                     <div class="entrada">
                             <div class="campo">
                                 <label>VALOR INICIAL</label>
-                                <input type="text">
+                                <div class="input-grupo">
+                                    <span>R$</span>
+                                    <input id="valor" type="text">
+                                </div>
                                 <p>Quanto você tem hoje</p>
                             </div>
-
                             <div class="campo">
                                 <label>APORTE MENSAL</label>
-                                <input type="text">
+                                <div class="input-grupo">
+                                    <span>R$</span>
+                                    <input id="aporte" type="text">
+                                </div>
                                 <p>Quanto adiciona por mês</p>
                             </div>
-
                             <div class="campo">
-                                <label>TAXA ANUAL (%)</label>
-                                <input type="text">
+                                <label>TAXA ANUAL(%)</label>
+                                <div class="input-grupo">
+                                    <input id="taxa" type="text">
+                                    <span>%</span>
+                                </div>
                                 <p>Rendimento esperado</p>
                             </div>
-
                             <div class="campo">
                                 <label>PERÍODO</label>
-                                <input type="text">
+                                <div class="input-grupo">
+                                    <input id="periodo" type="text">
+                                    <span>Anos</span>
+                                </div>
                                 <p>Tempo de investimento</p>
-                               
-                            </div> 
+                            </div>
 
-                        
-                            <button>Calcular</button>
+                            
                     </div>
+
+                        <button id="calcular">Calcular</button>
 
                     <div class="saida">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
+                        <div class="campo2">
+                            <svg id="svgdollar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign-icon lucide-dollar-sign"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            <label>Patrimônio final</label>
+                            <p id="patrimoniofinal">R$ 0.00</p>
+                            <p>Valor total acumulado</p>
+                        </div>
+
+                        <div class="campo2">
+                            <svg id="svgwallet" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet-icon lucide-wallet"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+                            <label>Total investido</label>
+                            <p id="totalinvestido">R$ 0.00</p>
+                            <p>Quanto saiu do seu bolso</p>
+                        </div>
+
+                        <div class="campo2">
+                            <svg id="svggraphic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up-icon lucide-trending-up"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+                            <label>Rendimento</label>
+                            <p id="rendimento">+0%</p>
+                            <p>Gerado pelos juros</p>
+                        </div>
+
+                       
+                    </div> 
+
+                    <div class="campo3">
+                        <label>Evolução do patrimônio ao longo do tempo</label>
+                     </div>
+
                 </div> 
     </div>
 
     
 </body>
+<script src="1.js"></script>
 </html>
